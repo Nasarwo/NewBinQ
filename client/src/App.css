@@ -2,10 +2,48 @@
   background-color: #1a1a1a;
   height: 100vh;
   width: 100%;
-  outline: 1px red solid;
+  /* outline: 1px red solid; */
 }
 
 .header {
   background-color: #141414;
   height: 37px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  position: relative; /* Ограничивает абсолютное позиционирование */
+}
+
+.rightSide {
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: flex; /* Делаем контейнер flex */
+  gap: 0; /* Расстояние между элементами (можно увеличить при необходимости) */
+}
+
+.minBtn {
+  width: 37px;
+  height: 37px;
+  display: flex; /* Включаем Flexbox */
+  justify-content: center; /* Центрирование по горизонтали */
+  align-items: center; /* Центрирование по вертикали */
+}
+.minBtn svg {
+  width: 16px; /* Новая ширина (было 6px) */
+  height: 2px; /* Высота остаётся прежней */
+}
+.maxBtn {
+  width: 37px;
+  height: 37px;
+  display: flex; /* Включаем Flexbox */
+  justify-content: center; /* Центрирование по горизонтали */
+  align-items: center; /* Центрирование по вертикали */
+}
+.closeBtn {
+  width: 37px;
+  height: 37px;
+  display: flex; /* Включаем Flexbox */
+  justify-content: center; /* Центрирование по горизонтали */
+  align-items: center; /* Центрирование по вертикали */
 }
