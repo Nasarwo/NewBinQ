@@ -1,0 +1,15 @@
+.container {
+  display: flex;
+}
+
+.avatarImg {
+  width: 33px;
+  height: 33px;
+  user-select: none;
+}
+
+.status {
+  width: 4px;
+  height: 32px;
+  background-color: #82ba00;
+}

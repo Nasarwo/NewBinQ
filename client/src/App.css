@@ -1,3 +1,9 @@
+body {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  background-color: #1a1a1a;
+}
+
 .content {
   background-color: #1a1a1a;
   height: 100vh;
@@ -6,6 +12,7 @@
 }
 
 .header {
+  -webkit-app-region: drag;
   background-color: #141414;
   height: 37px;
   display: flex;
@@ -15,6 +22,7 @@
 }
 
 .rightSide {
+  -webkit-app-region: no-drag;
   position: absolute;
   right: 0;
   top: 0;
@@ -33,6 +41,9 @@
   width: 16px; /* Новая ширина (было 6px) */
   height: 2px; /* Высота остаётся прежней */
 }
+.minBtn:hover {
+  background-color: #212121;
+}
 .maxBtn {
   width: 37px;
   height: 37px;
@@ -40,10 +51,16 @@
   justify-content: center; /* Центрирование по горизонтали */
   align-items: center; /* Центрирование по вертикали */
 }
+.maxBtn:hover {
+  background-color: #212121;
+}
 .closeBtn {
   width: 37px;
   height: 37px;
   display: flex; /* Включаем Flexbox */
   justify-content: center; /* Центрирование по горизонтали */
   align-items: center; /* Центрирование по вертикали */
+}
+.closeBtn:hover {
+  background-color: rgb(157, 37, 37);
 }

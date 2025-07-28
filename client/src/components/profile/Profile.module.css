@@ -1,0 +1,21 @@
+.container {
+  display: flex; /* Включаем Flexbox */
+  justify-content: center; /* Центрирование по горизонтали */
+  align-items: center; /* Центрирование по вертикали */
+  /* outline: 1px solid green; */
+  padding-left: 5px;
+  padding-right: 5px;
+  gap: 10px;
+}
+.container:hover {
+  background-color: #212121; /* Цвет фона при наведении */
+}
+
+.username {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-size: 13px;
+  user-select: none;
+  color: #82ba00;
+}

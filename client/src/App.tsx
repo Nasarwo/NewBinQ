@@ -1,20 +1,26 @@
 import "./App.css";
+import { Profile } from "./components/profile/Profile";
 
 function App() {
+  const Minimize = () => window.ipcRenderer.minimizeWindow();
+  const Maximize = () => window.ipcRenderer.maximizeWindow();
+  const Close = () => window.ipcRenderer.closeWindow();
+
   return (
     <>
       <div className="content">
         <div className="header">
           <div className="rightSide">
-            <div className="minBtn">
+            <Profile />
+            <div className="minBtn" onClick={Minimize}>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                width="6"
+                width="16"
                 height="2"
-                viewBox="0 0 6 2"
+                viewBox="0 0 16 2"
               >
                 <path
-                  d="M 0,1 H 6"
+                  d="M 0,1 H 16"
                   stroke="#FFF"
                   stroke-width="1"
                   stroke-linecap="square"
@@ -22,7 +28,7 @@ function App() {
                 ></path>
               </svg>
             </div>
-            <div className="maxBtn">
+            <div className="maxBtn" onClick={Maximize}>
               <svg
                 width="17"
                 height="15"
@@ -33,7 +39,7 @@ function App() {
                 <path d="M16 1H1V14H16V1Z" stroke="white" />
               </svg>
             </div>
-            <div className="closeBtn">
+            <div className="closeBtn" onClick={Close}>
               <svg
                 width="15"
                 height="15"
@@ -52,7 +58,6 @@ function App() {
                 </defs>
               </svg>
             </div>
-            <div className="profileBtn"></div>
           </div>
           <div className="lastBtn"></div>
           <div className="contactsBtn"></div>
